@@ -1,0 +1,20 @@
+{% extends 'layouts/layout.html' %}
+
+{% block contenido %}
+
+<div class="login-box">
+    
+
+    {% if user.email %}
+        <h2>Bienvenido, {{request.user.first_name}} {{user.last_name}}</h2>
+        <br>
+        <p>
+            {{user.email}}
+        </p>
+    {% else %}
+        <h2>Identificate POR FAVOR!</h2>
+    {%endif%}
+     
+</div>
+
+{% endblock %}

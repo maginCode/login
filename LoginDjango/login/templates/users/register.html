@@ -1,0 +1,17 @@
+{% extends 'layouts/layout.html' %}
+
+
+    {% block contenido %}
+    <div class="login-box">
+        <h1>LOGIN</h1>
+    <form action="" method="POST">
+            {% csrf_token %}
+
+            {% for field in register_form %}
+                
+                {{field}}
+            {% endfor %}
+        <input type="submit" value="Registrar">
+    </form>
+</div>
+    {% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'layouts/layout.html' %}
+
+
+    {% block contenido %}
+
+    <div class="login-box">
+        <h1>LOGIN</h1>
+    <form action="" method="POST">
+
+        {% csrf_token %}
+        <div class="caja-de-texto">
+            <i class="fa fa-user" aria-hidden="true"></i>
+        <input type="text" placeholder="Nombre usuario" name="username"/>
+    </div>
+    <div class="caja-de-texto">
+        <i class="fa fa-lock" aria-hidden="true"></i>
+
+        <input type="password" placeholder="Contraseña" name="password">
+    </div>
+        <input class="btn"type="submit" value="LOGIN"/>
+
+    </form>
+    <a>1 or 1 = 1</a>   
+</div>
+    
+        
+        
+    
+        
+    
+        
+    
+        
+    
+    {% endblock %}
